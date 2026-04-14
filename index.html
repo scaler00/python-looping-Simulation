@@ -156,13 +156,17 @@
     <!-- code -->
     <div class="card">
       <h3>Code (highlighted)</h3>
-      <pre class="code" id="code-while"><span class="codeline" data-l="1">n = <span class="num" id="w-n-val">5</span></span><span class="codeline" data-l="2">count = <span class="num">1</span></span><span class="codeline" data-l="3"><span class="kw">while</span> count &lt;= n:</span><span class="codeline" data-l="4">    <span class="fn">print</span>(count)</span><span class="codeline" data-l="5">    count += <span class="num">1</span></span><span class="codeline" data-l="6"><span class="fn">print</span>(<span class="str">"end"</span>)</span></pre>
+      <pre class="code" id="code-while"><span class="codeline" data-l="1">n = <span class="num" id="w-n-val">5</span></span><span class="codeline" data-l="2">count = <span class="num" id="w-s-val">1</span></span><span class="codeline" data-l="3"><span class="kw">while</span> count &lt;= n:</span><span class="codeline" data-l="4">    <span class="fn">print</span>(count)</span><span class="codeline" data-l="5">    count += <span class="num" id="w-step-val">1</span></span><span class="codeline" data-l="6"><span class="fn">print</span>(<span class="str">"end"</span>)</span></pre>
     </div>
     <!-- state -->
     <div class="card scroll">
       <h3>Your Input</h3>
       <div class="controls">
-        <label>n =</label><input type="number" id="n-while" value="5" min="1" max="20">
+        <label>n</label><input type="number" id="n-while" value="5" min="1" max="50">
+        <label>start</label><input type="number" id="w-start-i" value="1">
+        <label>step</label><input type="number" id="w-step-i" value="1" min="1">
+      </div>
+      <div class="controls">
         <button class="btn go" onclick="W.start()">▶ Auto</button>
         <button class="btn alt" onclick="W.step()">Step</button>
         <button class="btn" onclick="W.reset()">Reset</button>
@@ -208,13 +212,17 @@
     </div>
     <div class="card">
       <h3>Code (highlighted)</h3>
-      <pre class="code" id="code-break"><span class="codeline" data-l="1">limit = <span class="num" id="b-l-val">100</span></span><span class="codeline" data-l="2">target = <span class="num" id="b-t-val">4</span></span><span class="codeline" data-l="3">count = <span class="num">1</span></span><span class="codeline" data-l="4"><span class="kw">while</span> count &lt;= limit:</span><span class="codeline" data-l="5">    <span class="kw">if</span> count == target:</span><span class="codeline" data-l="6">        <span class="kw">break</span></span><span class="codeline" data-l="7">    <span class="fn">print</span>(count, end=<span class="str">" "</span>)</span><span class="codeline" data-l="8">    count += <span class="num">1</span></span></pre>
+      <pre class="code" id="code-break"><span class="codeline" data-l="1">limit = <span class="num" id="b-l-val">100</span></span><span class="codeline" data-l="2">target = <span class="num" id="b-t-val">4</span></span><span class="codeline" data-l="3">count = <span class="num" id="b-s-val">1</span></span><span class="codeline" data-l="4"><span class="kw">while</span> count &lt;= limit:</span><span class="codeline" data-l="5">    <span class="kw">if</span> count == target:</span><span class="codeline" data-l="6">        <span class="kw">break</span></span><span class="codeline" data-l="7">    <span class="fn">print</span>(count, end=<span class="str">" "</span>)</span><span class="codeline" data-l="8">    count += <span class="num" id="b-step-val">1</span></span></pre>
     </div>
     <div class="card scroll">
       <h3>Your Input</h3>
       <div class="controls">
         <label>limit</label><input type="number" id="b-limit" value="100" min="1">
         <label>target</label><input type="number" id="b-target" value="4" min="1">
+      </div>
+      <div class="controls">
+        <label>start</label><input type="number" id="b-start-i" value="1">
+        <label>step</label><input type="number" id="b-step-i" value="1" min="1">
       </div>
       <div class="controls">
         <button class="btn go" onclick="B.start()">▶ Auto</button>
@@ -262,13 +270,17 @@
     </div>
     <div class="card">
       <h3>Code (highlighted)</h3>
-      <pre class="code" id="code-continue"><span class="codeline" data-l="1">limit = <span class="num" id="c-l-val">10</span></span><span class="codeline" data-l="2">skip = <span class="num" id="c-s-val">4</span></span><span class="codeline" data-l="3">count = <span class="num">1</span></span><span class="codeline" data-l="4"><span class="kw">while</span> count &lt;= limit:</span><span class="codeline" data-l="5">    count += <span class="num">1</span></span><span class="codeline" data-l="6">    <span class="kw">if</span> count == skip:</span><span class="codeline" data-l="7">        <span class="kw">continue</span></span><span class="codeline" data-l="8">    <span class="fn">print</span>(count, end=<span class="str">" "</span>)</span></pre>
+      <pre class="code" id="code-continue"><span class="codeline" data-l="1">limit = <span class="num" id="c-l-val">10</span></span><span class="codeline" data-l="2">skip = <span class="num" id="c-s-val">4</span></span><span class="codeline" data-l="3">count = <span class="num" id="c-init-val">1</span></span><span class="codeline" data-l="4"><span class="kw">while</span> count &lt;= limit:</span><span class="codeline" data-l="5">    count += <span class="num" id="c-step-val">1</span></span><span class="codeline" data-l="6">    <span class="kw">if</span> count == skip:</span><span class="codeline" data-l="7">        <span class="kw">continue</span></span><span class="codeline" data-l="8">    <span class="fn">print</span>(count, end=<span class="str">" "</span>)</span></pre>
     </div>
     <div class="card scroll">
       <h3>Your Input</h3>
       <div class="controls">
         <label>limit</label><input type="number" id="c-limit" value="10" min="1">
         <label>skip</label><input type="number" id="c-skip" value="4" min="1">
+      </div>
+      <div class="controls">
+        <label>start</label><input type="number" id="c-start-i" value="1">
+        <label>step</label><input type="number" id="c-step-i" value="1" min="1">
       </div>
       <div class="controls">
         <button class="btn go" onclick="C.start()">▶ Auto</button>
@@ -358,13 +370,23 @@
     </div>
     <div class="card">
       <h3>Code (highlighted)</h3>
-      <pre class="code" id="code-nested"><span class="codeline" data-l="1">R = <span class="num" id="n-r-val">3</span>  <span class="cm"># rows</span></span><span class="codeline" data-l="2">C = <span class="num" id="n-c-val">4</span>  <span class="cm"># cols</span></span><span class="codeline" data-l="3"><span class="kw">for</span> row <span class="kw">in</span> <span class="fn">range</span>(R):</span><span class="codeline" data-l="4">    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, C+<span class="num">1</span>):</span><span class="codeline" data-l="5">        <span class="fn">print</span>(i, end=<span class="str">" "</span>)</span><span class="codeline" data-l="6">    <span class="fn">print</span>()</span></pre>
+      <pre class="code" id="code-nested"><span class="codeline" data-l="1">R = <span class="num" id="n-r-val">3</span>  <span class="cm"># rows</span></span><span class="codeline" data-l="2">C = <span class="num" id="n-c-val">4</span>  <span class="cm"># cols</span></span><span class="codeline" data-l="3"><span class="kw">for</span> row <span class="kw">in</span> <span class="fn">range</span>(R):</span><span class="codeline" data-l="4">    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, C+<span class="num">1</span>):</span><span class="codeline" data-l="5">        <span class="fn">print</span>(<span id="n-expr-val">i</span>, end=<span class="str">" "</span>)</span><span class="codeline" data-l="6">    <span class="fn">print</span>()</span></pre>
     </div>
     <div class="card scroll">
       <h3>Your Input</h3>
       <div class="controls">
         <label>rows</label><input type="number" id="n-rows" value="3" min="1" max="8">
         <label>cols</label><input type="number" id="n-cols" value="4" min="1" max="9">
+      </div>
+      <div class="controls">
+        <label>print</label>
+        <select id="n-expr" style="padding:5px;background:#0f1419;color:#fff;border:1px solid #2d3e50;border-radius:5px;font-size:12px;">
+          <option value="i">i</option>
+          <option value="row">row</option>
+          <option value="row+1">row+1</option>
+          <option value="star">'*'</option>
+          <option value="ri">row*C+i</option>
+        </select>
       </div>
       <div class="controls">
         <button class="btn go" onclick="N.start()">▶ Auto</button>
@@ -417,26 +439,30 @@ function highlightLine(codeId, line){
 
 // ========= WHILE =========
 const W = (() => {
-  let count,n,out,stage,timer,done;
+  let count,n,startV,stepV,out,stage,timer,done;
   function reset(){
     clearInterval(timer); timer=null;
     n=parseInt(document.getElementById('n-while').value)||5;
+    startV=parseInt(document.getElementById('w-start-i').value); if(isNaN(startV))startV=1;
+    stepV=parseInt(document.getElementById('w-step-i').value)||1;
     document.getElementById('w-n-val').textContent=n;
+    document.getElementById('w-s-val').textContent=startV;
+    document.getElementById('w-step-val').textContent=stepV;
     count=null; out=''; stage='start'; done=false;
     clearDiag('svg-while');
-    setVars('vars-while',{count:'—',n});
+    setVars('vars-while',{count:'—',n,start:startV,step:stepV});
     document.getElementById('out-while').textContent='';
-    setStatus('status-while','Ready. n = '+n);
+    setStatus('status-while','Ready.');
     highlightLine('code-while', 1);
   }
   function step(){
     if(done)return;
     if(stage==='start'){activate('svg-while','w-start'); activateEdge('svg-while','w-e1'); highlightLine('code-while',1); stage='init'; return;}
-    if(stage==='init'){markDone('w-start'); activate('svg-while','w-init'); activateEdge('svg-while','w-e2'); count=1; setVars('vars-while',{count,n}); highlightLine('code-while',2); setStatus('status-while','count = 1','true'); stage='cond'; return;}
+    if(stage==='init'){markDone('w-start'); activate('svg-while','w-init'); activateEdge('svg-while','w-e2'); count=startV; setVars('vars-while',{count,n,start:startV,step:stepV}); highlightLine('code-while',2); setStatus('status-while','count = '+count,'true'); stage='cond'; return;}
     if(stage==='cond'){markDone('w-init'); activate('svg-while','w-cond'); highlightLine('code-while',3); const ok=count<=n; setStatus('status-while',`Check: ${count} ≤ ${n} → <b>${ok}</b>`, ok?'true':'false'); stage=ok?'toaction':'toend'; return;}
     if(stage==='toaction'){activateEdge('svg-while','w-e3'); stage='action'; return;}
     if(stage==='action'){activate('svg-while','w-action'); activateEdge('svg-while','w-e4'); highlightLine('code-while',4); out+=count+'\n'; document.getElementById('out-while').textContent=out; setStatus('status-while','print('+count+')','true'); stage='update'; return;}
-    if(stage==='update'){markDone('w-action'); activate('svg-while','w-update'); activateEdge('svg-while','w-e5'); highlightLine('code-while',5); count++; setVars('vars-while',{count,n}); setStatus('status-while','count → '+count); stage='cond'; return;}
+    if(stage==='update'){markDone('w-action'); activate('svg-while','w-update'); activateEdge('svg-while','w-e5'); highlightLine('code-while',5); count+=stepV; setVars('vars-while',{count,n,start:startV,step:stepV}); setStatus('status-while','count → '+count); stage='cond'; return;}
     if(stage==='toend'){activateEdge('svg-while','w-e6'); activate('svg-while','w-end'); highlightLine('code-while',6); out+='end\n'; document.getElementById('out-while').textContent=out; setStatus('status-while','Condition false. END.','false'); done=true; clearInterval(timer);}
   }
   function start(){reset(); const sp=parseInt(document.getElementById('w-speed').value); timer=setInterval(()=>{step(); if(done)clearInterval(timer);},sp);}
@@ -446,16 +472,20 @@ W.reset();
 
 // ========= BREAK =========
 const B = (() => {
-  let count,limit,target,out,stage,timer,done;
+  let count,limit,target,startV,stepV,out,stage,timer,done;
   function reset(){
     clearInterval(timer); timer=null;
     limit=parseInt(document.getElementById('b-limit').value)||100;
     target=parseInt(document.getElementById('b-target').value)||4;
+    startV=parseInt(document.getElementById('b-start-i').value); if(isNaN(startV))startV=1;
+    stepV=parseInt(document.getElementById('b-step-i').value)||1;
     document.getElementById('b-l-val').textContent=limit;
     document.getElementById('b-t-val').textContent=target;
+    document.getElementById('b-s-val').textContent=startV;
+    document.getElementById('b-step-val').textContent=stepV;
     count=null; out=''; stage='start'; done=false;
     clearDiag('svg-break');
-    setVars('vars-break',{count:'—',limit,target});
+    setVars('vars-break',{count:'—',limit,target,start:startV,step:stepV});
     document.getElementById('out-break').textContent='';
     setStatus('status-break','Ready.');
     highlightLine('code-break',1);
@@ -463,12 +493,12 @@ const B = (() => {
   function step(){
     if(done)return;
     if(stage==='start'){activate('svg-break','b-start'); activateEdge('svg-break','b-e1'); stage='init'; return;}
-    if(stage==='init'){markDone('b-start'); activate('svg-break','b-init'); activateEdge('svg-break','b-e2'); count=1; setVars('vars-break',{count,limit,target}); highlightLine('code-break',3); stage='cond'; return;}
+    if(stage==='init'){markDone('b-start'); activate('svg-break','b-init'); activateEdge('svg-break','b-e2'); count=startV; setVars('vars-break',{count,limit,target,start:startV,step:stepV}); highlightLine('code-break',3); stage='cond'; return;}
     if(stage==='cond'){markDone('b-init'); activate('svg-break','b-cond'); highlightLine('code-break',4); const ok=count<=limit; setStatus('status-break',`${count} ≤ ${limit} → ${ok}`,ok?'true':'false'); if(ok){activateEdge('svg-break','b-e3'); stage='if';} else {activateEdge('svg-break','b-e9'); stage='end';} return;}
     if(stage==='if'){activate('svg-break','b-if'); highlightLine('code-break',5); const eq=count===target; setStatus('status-break',`count == ${target}? → ${eq}`,eq?'false':'true'); if(eq){activateEdge('svg-break','b-e4'); stage='break';} else {activateEdge('svg-break','b-e5'); stage='print';} return;}
     if(stage==='break'){activate('svg-break','b-break'); activateEdge('svg-break','b-e8'); highlightLine('code-break',6); setStatus('status-break','💥 break — jump to END','false'); stage='end'; return;}
     if(stage==='print'){activate('svg-break','b-print'); activateEdge('svg-break','b-e6'); highlightLine('code-break',7); out+=count+' '; document.getElementById('out-break').textContent=out; stage='upd'; return;}
-    if(stage==='upd'){activate('svg-break','b-upd'); activateEdge('svg-break','b-e7'); highlightLine('code-break',8); count++; setVars('vars-break',{count,limit,target}); stage='cond'; return;}
+    if(stage==='upd'){activate('svg-break','b-upd'); activateEdge('svg-break','b-e7'); highlightLine('code-break',8); count+=stepV; setVars('vars-break',{count,limit,target,start:startV,step:stepV}); stage='cond'; return;}
     if(stage==='end'){activate('svg-break','b-end'); setStatus('status-break','END','false'); done=true; clearInterval(timer);}
   }
   function start(){reset(); const sp=parseInt(document.getElementById('b-speed').value); timer=setInterval(()=>{step(); if(done)clearInterval(timer);},sp);}
@@ -478,16 +508,20 @@ B.reset();
 
 // ========= CONTINUE =========
 const C = (() => {
-  let count,limit,skip,out,stage,timer,done,steps;
+  let count,limit,skip,startV,stepV,out,stage,timer,done,steps;
   function reset(){
     clearInterval(timer); timer=null;
     limit=parseInt(document.getElementById('c-limit').value)||10;
     skip=parseInt(document.getElementById('c-skip').value)||4;
+    startV=parseInt(document.getElementById('c-start-i').value); if(isNaN(startV))startV=1;
+    stepV=parseInt(document.getElementById('c-step-i').value)||1;
     document.getElementById('c-l-val').textContent=limit;
     document.getElementById('c-s-val').textContent=skip;
+    document.getElementById('c-init-val').textContent=startV;
+    document.getElementById('c-step-val').textContent=stepV;
     count=null; out=''; stage='start'; done=false; steps=0;
     clearDiag('svg-continue');
-    setVars('vars-continue',{count:'—',limit,skip});
+    setVars('vars-continue',{count:'—',limit,skip,start:startV,step:stepV});
     document.getElementById('out-continue').textContent='';
     setStatus('status-continue','Ready.');
     highlightLine('code-continue',1);
@@ -495,9 +529,9 @@ const C = (() => {
   function step(){
     if(done)return; steps++; if(steps>200){setStatus('status-continue','🛑 too many steps','false'); done=true; clearInterval(timer); return;}
     if(stage==='start'){activate('svg-continue','c-start'); activateEdge('svg-continue','c-e1'); stage='init'; return;}
-    if(stage==='init'){markDone('c-start'); activate('svg-continue','c-init'); activateEdge('svg-continue','c-e2'); count=1; setVars('vars-continue',{count,limit,skip}); highlightLine('code-continue',3); stage='cond'; return;}
+    if(stage==='init'){markDone('c-start'); activate('svg-continue','c-init'); activateEdge('svg-continue','c-e2'); count=startV; setVars('vars-continue',{count,limit,skip,start:startV,step:stepV}); highlightLine('code-continue',3); stage='cond'; return;}
     if(stage==='cond'){markDone('c-init'); activate('svg-continue','c-cond'); highlightLine('code-continue',4); const ok=count<=limit; setStatus('status-continue',`${count} ≤ ${limit} → ${ok}`,ok?'true':'false'); if(ok){activateEdge('svg-continue','c-e3'); stage='upd';} else {activateEdge('svg-continue','c-e9'); stage='end';} return;}
-    if(stage==='upd'){activate('svg-continue','c-upd'); activateEdge('svg-continue','c-e4'); highlightLine('code-continue',5); count++; setVars('vars-continue',{count,limit,skip}); stage='if'; return;}
+    if(stage==='upd'){activate('svg-continue','c-upd'); activateEdge('svg-continue','c-e4'); highlightLine('code-continue',5); count+=stepV; setVars('vars-continue',{count,limit,skip,start:startV,step:stepV}); stage='if'; return;}
     if(stage==='if'){activate('svg-continue','c-if'); highlightLine('code-continue',6); const eq=count===skip; setStatus('status-continue',`count == ${skip}? → ${eq}`,eq?'false':'true'); if(eq){activateEdge('svg-continue','c-e5'); stage='cont';} else {activateEdge('svg-continue','c-e6'); stage='print';} return;}
     if(stage==='cont'){activate('svg-continue','c-cont'); activateEdge('svg-continue','c-e8'); highlightLine('code-continue',7); setStatus('status-continue','↩ continue — back to condition','false'); stage='cond'; return;}
     if(stage==='print'){activate('svg-continue','c-print'); activateEdge('svg-continue','c-e7'); highlightLine('code-continue',8); out+=count+' '; document.getElementById('out-continue').textContent=out; stage='cond'; return;}
@@ -551,13 +585,17 @@ F.reset();
 
 // ========= NESTED =========
 const N = (() => {
-  let R,Cn,row,i,stage,timer,done,grid;
+  let R,Cn,expr,row,i,stage,timer,done,grid;
+  const exprMap={i:'i',row:'row',['row+1']:'row+1',star:"'*'",ri:'row*C+i'};
+  function eval_(){return expr==='i'?i:expr==='row'?row:expr==='row+1'?row+1:expr==='star'?'*':row*Cn+i;}
   function reset(){
     clearInterval(timer); timer=null;
     R=parseInt(document.getElementById('n-rows').value)||3;
     Cn=parseInt(document.getElementById('n-cols').value)||4;
+    expr=document.getElementById('n-expr').value;
     document.getElementById('n-r-val').textContent=R;
     document.getElementById('n-c-val').textContent=Cn;
+    document.getElementById('n-expr-val').textContent=exprMap[expr];
     row=0; i=1; stage='start'; done=false; grid=[];
     clearDiag('svg-nested');
     setVars('vars-nested',{row:'—',i:'—',R,C:Cn});
@@ -571,7 +609,7 @@ const N = (() => {
     if(stage==='start'){activate('svg-nested','n-start'); activateEdge('svg-nested','n-e1'); stage='outer'; return;}
     if(stage==='outer'){activate('svg-nested','n-outer'); highlightLine('code-nested',3); if(row>=R){activateEdge('svg-nested','n-e7'); stage='end'; return;} activateEdge('svg-nested','n-e2'); setStatus('status-nested',`Outer: row=${row}`,'true'); grid[row]=grid[row]||[]; i=1; stage='inner'; return;}
     if(stage==='inner'){activate('svg-nested','n-inner'); highlightLine('code-nested',4); if(i>Cn){activateEdge('svg-nested','n-e5'); stage='nl'; return;} activateEdge('svg-nested','n-e3'); setVars('vars-nested',{row,i,R,C:Cn}); stage='body'; return;}
-    if(stage==='body'){activate('svg-nested','n-body'); highlightLine('code-nested',5); grid[row].push(i); render(); activateEdge('svg-nested','n-e4'); setStatus('status-nested',`print(${i})`); i++; stage='inner'; return;}
+    if(stage==='body'){activate('svg-nested','n-body'); highlightLine('code-nested',5); const v=eval_(); grid[row].push(v); render(); activateEdge('svg-nested','n-e4'); setStatus('status-nested',`print(${v})`); i++; stage='inner'; return;}
     if(stage==='nl'){activate('svg-nested','n-nl'); highlightLine('code-nested',6); activateEdge('svg-nested','n-e6'); setStatus('status-nested',`row ${row} done → newline`); row++; stage='outer'; return;}
     if(stage==='end'){activate('svg-nested','n-end'); setStatus('status-nested','🎉 Pattern complete!','false'); done=true; clearInterval(timer);}
   }
