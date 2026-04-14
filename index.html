@@ -130,10 +130,10 @@
       <h3>Flowchart</h3>
       <svg viewBox="0 0 620 620" id="svg-while" preserveAspectRatio="xMidYMid meet">
         <g class="node" id="w-start"><ellipse cx="310" cy="40" rx="60" ry="22" fill="#118ab2" stroke="#1aa5d4" stroke-width="2"/><text x="310" y="45" text-anchor="middle">START</text></g>
-        <g class="node" id="w-init"><rect x="210" y="90" width="200" height="52" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="110" text-anchor="middle" font-size="12">1️⃣ Initialize</text><text x="310" y="130" text-anchor="middle" font-size="13" fill="#ffd166">count = 1</text></g>
-        <g class="node" id="w-cond"><polygon points="310,180 450,250 310,320 170,250" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="245" text-anchor="middle" font-size="12">2️⃣ Condition</text><text x="310" y="265" text-anchor="middle" font-size="13" fill="#ffd166">count ≤ n ?</text></g>
+        <g class="node" id="w-init"><rect x="210" y="90" width="200" height="52" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="110" text-anchor="middle" font-size="12">1️⃣ Initialize</text><text x="310" y="130" text-anchor="middle" font-size="13" fill="#ffd166" id="w-d-init">count = 1</text></g>
+        <g class="node" id="w-cond"><polygon points="310,180 450,250 310,320 170,250" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="245" text-anchor="middle" font-size="12">2️⃣ Condition</text><text x="310" y="265" text-anchor="middle" font-size="13" fill="#ffd166" id="w-d-cond">count ≤ 5 ?</text></g>
         <g class="node" id="w-action"><rect x="210" y="360" width="200" height="48" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="380" text-anchor="middle" font-size="12">3️⃣ Action</text><text x="310" y="398" text-anchor="middle" font-size="12" fill="#ffd166">print(count)</text></g>
-        <g class="node" id="w-update"><rect x="210" y="438" width="200" height="48" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="458" text-anchor="middle" font-size="12">4️⃣ Update</text><text x="310" y="476" text-anchor="middle" font-size="12" fill="#ffd166">count += 1</text></g>
+        <g class="node" id="w-update"><rect x="210" y="438" width="200" height="48" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="458" text-anchor="middle" font-size="12">4️⃣ Update</text><text x="310" y="476" text-anchor="middle" font-size="12" fill="#ffd166" id="w-d-upd">count += 1</text></g>
         <g class="node" id="w-end"><ellipse cx="310" cy="570" rx="60" ry="22" fill="#ef476f" stroke="#ff6b8a" stroke-width="2"/><text x="310" y="575" text-anchor="middle">END</text></g>
 
         <path class="edge" id="w-e1" d="M 310 62 L 310 90"/>
@@ -188,12 +188,12 @@
       <h3>Flowchart</h3>
       <svg viewBox="0 0 620 620" id="svg-break" preserveAspectRatio="xMidYMid meet">
         <g class="node" id="b-start"><ellipse cx="310" cy="35" rx="55" ry="20" fill="#118ab2" stroke="#1aa5d4" stroke-width="2"/><text x="310" y="40" text-anchor="middle">START</text></g>
-        <g class="node" id="b-init"><rect x="220" y="80" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="105" text-anchor="middle" fill="#ffd166">count = 1</text></g>
-        <g class="node" id="b-cond"><polygon points="310,155 430,215 310,275 190,215" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="220" text-anchor="middle" fill="#ffd166">count ≤ limit?</text></g>
-        <g class="node" id="b-if"><polygon points="310,310 430,370 310,430 190,370" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="375" text-anchor="middle" fill="#ffd166">count == target?</text></g>
+        <g class="node" id="b-init"><rect x="220" y="80" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="105" text-anchor="middle" fill="#ffd166" id="b-d-init">count = 1</text></g>
+        <g class="node" id="b-cond"><polygon points="310,155 430,215 310,275 190,215" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="220" text-anchor="middle" fill="#ffd166" id="b-d-cond">count ≤ 100?</text></g>
+        <g class="node" id="b-if"><polygon points="310,310 430,370 310,430 190,370" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="375" text-anchor="middle" fill="#ffd166" id="b-d-if">count == 4?</text></g>
         <g class="node" id="b-break"><rect x="470" y="350" width="120" height="42" rx="10" fill="#ef476f22" stroke="#ef476f" stroke-width="2"/><text x="530" y="375" text-anchor="middle" fill="#ef476f" font-weight="bold">BREAK 💥</text></g>
         <g class="node" id="b-print"><rect x="220" y="460" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="485" text-anchor="middle" fill="#ffd166">print(count)</text></g>
-        <g class="node" id="b-upd"><rect x="220" y="515" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="540" text-anchor="middle" fill="#ffd166">count += 1</text></g>
+        <g class="node" id="b-upd"><rect x="220" y="515" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="540" text-anchor="middle" fill="#ffd166" id="b-d-upd">count += 1</text></g>
         <g class="node" id="b-end"><ellipse cx="530" cy="580" rx="55" ry="20" fill="#ef476f" stroke="#ff6b8a" stroke-width="2"/><text x="530" y="585" text-anchor="middle">END</text></g>
 
         <path class="edge" id="b-e1" d="M 310 55 L 310 80"/>
@@ -246,10 +246,10 @@
       <h3>Flowchart</h3>
       <svg viewBox="0 0 620 620" id="svg-continue" preserveAspectRatio="xMidYMid meet">
         <g class="node" id="c-start"><ellipse cx="310" cy="35" rx="55" ry="20" fill="#118ab2" stroke="#1aa5d4" stroke-width="2"/><text x="310" y="40" text-anchor="middle">START</text></g>
-        <g class="node" id="c-init"><rect x="220" y="75" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="100" text-anchor="middle" fill="#ffd166">count = 1</text></g>
-        <g class="node" id="c-cond"><polygon points="310,150 430,210 310,270 190,210" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="215" text-anchor="middle" fill="#ffd166">count ≤ limit?</text></g>
-        <g class="node" id="c-upd"><rect x="220" y="300" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="325" text-anchor="middle" fill="#ffd166">count += 1</text></g>
-        <g class="node" id="c-if"><polygon points="310,370 430,430 310,490 190,430" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="435" text-anchor="middle" fill="#ffd166">count == skip?</text></g>
+        <g class="node" id="c-init"><rect x="220" y="75" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="100" text-anchor="middle" fill="#ffd166" id="c-d-init">count = 1</text></g>
+        <g class="node" id="c-cond"><polygon points="310,150 430,210 310,270 190,210" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="215" text-anchor="middle" fill="#ffd166" id="c-d-cond">count ≤ 10?</text></g>
+        <g class="node" id="c-upd"><rect x="220" y="300" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="325" text-anchor="middle" fill="#ffd166" id="c-d-upd">count += 1</text></g>
+        <g class="node" id="c-if"><polygon points="310,370 430,430 310,490 190,430" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="435" text-anchor="middle" fill="#ffd166" id="c-d-if">count == 4?</text></g>
         <g class="node" id="c-cont"><rect x="470" y="410" width="120" height="42" rx="10" fill="#ffd16622" stroke="#ffd166" stroke-width="2"/><text x="530" y="435" text-anchor="middle" fill="#ffd166" font-weight="bold">CONTINUE ↩</text></g>
         <g class="node" id="c-print"><rect x="220" y="520" width="180" height="42" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="545" text-anchor="middle" fill="#ffd166">print(count)</text></g>
         <g class="node" id="c-end"><ellipse cx="80" cy="210" rx="35" ry="18" fill="#ef476f" stroke="#ff6b8a" stroke-width="2"/><text x="80" y="215" text-anchor="middle">END</text></g>
@@ -304,7 +304,7 @@
       <h3>Flowchart</h3>
       <svg viewBox="0 0 620 560" id="svg-for" preserveAspectRatio="xMidYMid meet">
         <g class="node" id="f-start"><ellipse cx="310" cy="40" rx="55" ry="20" fill="#118ab2" stroke="#1aa5d4" stroke-width="2"/><text x="310" y="45" text-anchor="middle">START</text></g>
-        <g class="node" id="f-iter"><rect x="200" y="85" width="220" height="58" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="108" text-anchor="middle" font-size="12">Build iterator</text><text x="310" y="130" text-anchor="middle" fill="#ffd166" font-size="12">range(start, end, step)</text></g>
+        <g class="node" id="f-iter"><rect x="200" y="85" width="220" height="58" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="108" text-anchor="middle" font-size="12">Build iterator</text><text x="310" y="130" text-anchor="middle" fill="#ffd166" font-size="12" id="f-d-range">range(1, 6, 1)</text></g>
         <g class="node" id="f-next"><polygon points="310,185 440,260 310,335 180,260" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="255" text-anchor="middle" font-size="12">Has next value?</text><text x="310" y="275" text-anchor="middle" fill="#ffd166" font-size="12">i = next(iter)</text></g>
         <g class="node" id="f-body"><rect x="210" y="385" width="200" height="55" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="407" text-anchor="middle" font-size="12">Loop body</text><text x="310" y="427" text-anchor="middle" fill="#ffd166" font-size="12">print(i)</text></g>
         <g class="node" id="f-end"><ellipse cx="540" cy="260" rx="55" ry="20" fill="#ef476f" stroke="#ff6b8a" stroke-width="2"/><text x="540" y="265" text-anchor="middle">END</text></g>
@@ -349,9 +349,9 @@
       <h3>Flowchart</h3>
       <svg viewBox="0 0 620 580" id="svg-nested" preserveAspectRatio="xMidYMid meet">
         <g class="node" id="n-start"><ellipse cx="310" cy="35" rx="55" ry="20" fill="#118ab2" stroke="#1aa5d4" stroke-width="2"/><text x="310" y="40" text-anchor="middle">START</text></g>
-        <g class="node" id="n-outer"><polygon points="310,85 440,150 310,215 180,150" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="145" text-anchor="middle" font-size="12">OUTER</text><text x="310" y="165" text-anchor="middle" fill="#ffd166" font-size="12">row &lt; R ?</text></g>
-        <g class="node" id="n-inner"><polygon points="310,255 440,320 310,385 180,320" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="315" text-anchor="middle" font-size="12">INNER</text><text x="310" y="335" text-anchor="middle" fill="#ffd166" font-size="12">i ≤ C ?</text></g>
-        <g class="node" id="n-body"><rect x="220" y="425" width="180" height="45" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="452" text-anchor="middle" fill="#ffd166">print(i, end=" ")</text></g>
+        <g class="node" id="n-outer"><polygon points="310,85 440,150 310,215 180,150" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="145" text-anchor="middle" font-size="12">OUTER</text><text x="310" y="165" text-anchor="middle" fill="#ffd166" font-size="12" id="n-d-outer">row &lt; 3 ?</text></g>
+        <g class="node" id="n-inner"><polygon points="310,255 440,320 310,385 180,320" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="315" text-anchor="middle" font-size="12">INNER</text><text x="310" y="335" text-anchor="middle" fill="#ffd166" font-size="12" id="n-d-inner">i ≤ 4 ?</text></g>
+        <g class="node" id="n-body"><rect x="220" y="425" width="180" height="45" rx="10" fill="#2d3e50" stroke="#5a6a7a" stroke-width="2"/><text x="310" y="452" text-anchor="middle" fill="#ffd166" id="n-d-body">print(i, end=" ")</text></g>
         <g class="node" id="n-nl"><rect x="480" y="298" width="120" height="45" rx="10" fill="#ffd16622" stroke="#ffd166" stroke-width="2"/><text x="540" y="325" text-anchor="middle" fill="#ffd166">newline</text></g>
         <g class="node" id="n-end"><ellipse cx="80" cy="150" rx="50" ry="20" fill="#ef476f" stroke="#ff6b8a" stroke-width="2"/><text x="80" y="155" text-anchor="middle">END</text></g>
 
@@ -448,6 +448,9 @@ const W = (() => {
     document.getElementById('w-n-val').textContent=n;
     document.getElementById('w-s-val').textContent=startV;
     document.getElementById('w-step-val').textContent=stepV;
+    document.getElementById('w-d-init').textContent=`count = ${startV}`;
+    document.getElementById('w-d-cond').textContent=`count ≤ ${n} ?`;
+    document.getElementById('w-d-upd').textContent=`count += ${stepV}`;
     count=null; out=''; stage='start'; done=false;
     clearDiag('svg-while');
     setVars('vars-while',{count:'—',n,start:startV,step:stepV});
@@ -483,6 +486,10 @@ const B = (() => {
     document.getElementById('b-t-val').textContent=target;
     document.getElementById('b-s-val').textContent=startV;
     document.getElementById('b-step-val').textContent=stepV;
+    document.getElementById('b-d-init').textContent=`count = ${startV}`;
+    document.getElementById('b-d-cond').textContent=`count ≤ ${limit} ?`;
+    document.getElementById('b-d-if').textContent=`count == ${target} ?`;
+    document.getElementById('b-d-upd').textContent=`count += ${stepV}`;
     count=null; out=''; stage='start'; done=false;
     clearDiag('svg-break');
     setVars('vars-break',{count:'—',limit,target,start:startV,step:stepV});
@@ -519,6 +526,10 @@ const C = (() => {
     document.getElementById('c-s-val').textContent=skip;
     document.getElementById('c-init-val').textContent=startV;
     document.getElementById('c-step-val').textContent=stepV;
+    document.getElementById('c-d-init').textContent=`count = ${startV}`;
+    document.getElementById('c-d-cond').textContent=`count ≤ ${limit} ?`;
+    document.getElementById('c-d-if').textContent=`count == ${skip} ?`;
+    document.getElementById('c-d-upd').textContent=`count += ${stepV}`;
     count=null; out=''; stage='start'; done=false; steps=0;
     clearDiag('svg-continue');
     setVars('vars-continue',{count:'—',limit,skip,start:startV,step:stepV});
@@ -552,6 +563,7 @@ const F = (() => {
     document.getElementById('f-a-val').textContent=s;
     document.getElementById('f-b-val').textContent=e;
     document.getElementById('f-c-val').textContent=st;
+    document.getElementById('f-d-range').textContent=`range(${s}, ${e}, ${st})`;
     const arr=[];
     if(st===0) return arr;
     if(st>0) for(let x=s;x<e;x+=st) arr.push(x);
@@ -596,6 +608,9 @@ const N = (() => {
     document.getElementById('n-r-val').textContent=R;
     document.getElementById('n-c-val').textContent=Cn;
     document.getElementById('n-expr-val').textContent=exprMap[expr];
+    document.getElementById('n-d-outer').textContent=`row < ${R} ?`;
+    document.getElementById('n-d-inner').textContent=`i ≤ ${Cn} ?`;
+    document.getElementById('n-d-body').textContent=`print(${exprMap[expr]})`;
     row=0; i=1; stage='start'; done=false; grid=[];
     clearDiag('svg-nested');
     setVars('vars-nested',{row:'—',i:'—',R,C:Cn});
